@@ -1,8 +1,8 @@
-# Use official pre-built n8n image — no build, no npm, no errors
+# Use official n8n image — no commands needed
 FROM n8nio/n8n:latest
 
-# Expose port
+# Expose the port
 EXPOSE 5678
 
-# Run n8n directly
-CMD ["n8n", "start"]
+# Do NOT run "n8n start" — the image already has an entrypoint
+# The image automatically runs n8n when started
