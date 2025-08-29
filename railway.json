@@ -2,15 +2,11 @@
   "build": {
     "docker": true
   },
-  "deploy": {
-    "restart": "never"
-  },
   "env": {
     "N8N_HOST": "${INTERNAL_DOMAIN}",
     "N8N_PORT": "5678",
     "N8N_PROTOCOL": "https",
     "WEBHOOK_URL": "https://${INTERNAL_DOMAIN}/",
-    "NODE_ENV": "production",
-    "EXECUTIONS_MODE": "queue"
+    "NODE_ENV": "production"
   }
 }
